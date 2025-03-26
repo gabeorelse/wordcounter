@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(219, 231, 242);
+}
+
+h1 {
+    color: rgb(80, 51, 51);
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 3em; /* 1em = 16px */;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 100px;
+  }
+
+ul {
+    list-style-type: none;
+    color: rgb(80, 51, 51);
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 2em; /* 1em = 16px */;
+}
+
+li {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.material-symbols-outlined {
+    color: rgb(80, 51, 51);
+    font-size: 50px;
+}
+

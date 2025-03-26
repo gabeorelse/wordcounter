@@ -1,0 +1,11 @@
+services:
+  frontend:
+    image: node:22-alpine
+    build: ./
+    ports:
+      - "3000:3000"
+    command: npm start
+  backend:
+    build: ./
+    ports:
+      - "5000:5000"

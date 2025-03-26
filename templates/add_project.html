@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='add_project.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+        <title>Add Project</title>
+        <link rel="icon" type="image/x-icon" href="static/favicon.png">
+    </head>
+    <div class="header">
+        <h1>Project Details</h1>
+        <p><a href="/user_home">Account Home</a></p>
+    <hr>
+    </div>
+    <body>
+        <form id="project_form" method="post">
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title"><br>
+            <label for="genre">Primary genre</label><br>
+            <input type="text" id="genre" name="genre"><br>
+            <label for="genre1">Secondary genre</label><br>
+            <input type="text" id="genre1" name="genre1"><br>
+            <label for="genre2">Tertiary genre</label><br>
+            <input type="text" id="genre2" name="genre2"><br>
+            <label for="description">Description</label><br>
+            <input type="text" id="description" name="description" maxlength="400"><br><br>
+            <button id="create" type="button">Create</button>
+        </form>
+        </div>
+    </body>
+    <script src="{{url_for('static', filename='add_project.js')}}"></script> 
+</html>
